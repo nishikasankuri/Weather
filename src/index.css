@@ -60,7 +60,7 @@ code {
   border: 1px solid rgba(21, 12, 90, 0.8);
   background: rgba(255,255,255,0.1) ;
   color: #f8f8f8;
-  margin-top: 2rem;
+  margin-top: 0.8rem;
   padding: .7rem 1.5rem;
   font-size: 1.2rem;
   border-radius: 30px;
@@ -85,7 +85,7 @@ padding: 0.2rem;
 }
 
 .app .top {
-  margin:-1rem auto;
+  margin:-5rem auto;
   height:100%;
   width: 100%;
 }
@@ -161,4 +161,15 @@ p {
 .information_icon {
   height: 40px;
   width: 40px;
+}
+
+
+.icon {
+    width: 40px;  /* Set your desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.iconcredits-link {
+  color: #676b6d; /* Change to your desired color */
+  text-decoration: none; /* Remove underline if desired */
 }
