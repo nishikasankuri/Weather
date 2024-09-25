@@ -16,7 +16,7 @@ function App() {
   const [location,setCity] = useState('')
   const [error, setError] = useState(null)
   const [showContent, setShowContent] = useState(false);
-  const api_key='46fa04d10d8f0318603a4bdf75f69e01'
+  const api_key=''
   const url=`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=${api_key}`
   
   const weather_icons = {
