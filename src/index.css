@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +19,146 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.app:before {
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  content: '';
+  background: url('./assets/background.jpg') no-repeat center center/cover;
+  position: absolute;
+  z-index: -1;
+  }
+
+.app {
+  height:100vh;
+  position:relative;
+  background-color: rgba(0,0,0,0.6);
+  width:100%;
+  color:#d4d4dc;
+}
+
+.container {
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
+  display:flex;
+  flex-direction: column;
+  max-width: 800px;
+  height: 700px;
+  margin: auto;
+  justify-content: space-between;
+  }
+
+.app input {
+  border: 1px solid rgba(21, 12, 90, 0.8);
+  background: rgba(255,255,255,0.1) ;
+  color: #f8f8f8;
+  margin-top: 2rem;
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  
+  }
+
+::placeholder {
+color: #f8f8f8;
+}
+
+.app .locationSearch {
+text-align: center;
+padding: 0.2rem;
+}
+
+.app .description {
+  position: relative;
+  transform-origin: 0 0;
+  transform:rotate(270deg);
+  font-size: 10rem;
+  right: -90%;
+}
+
+.app .top {
+  margin:-1rem auto;
+  height:100%;
+  width: 100%;
+}
+
+.weathertype {
+  font-size: 1.6rem;
+}
+
+.app .bottom {
+  flex-direction: row;
+  padding: 1rem;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.058);
+  position: relative;
+  height: 500px; 
+  width: 100%;
+}
+
+.app .weather-icon {
+    margin: 50px 0;
+    margin-left: 300px;
+    width: 200px;
+}
+
+.app .bottom > div p {
+  font-size: small;
+  margin: 2px 0;
+}
+
+.app .bottom > div {
+  box-sizing: border-box;
+  align-items: center;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 80%;  
+  padding: 10px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  display: flex;
+  margin-top: 20px;
+}
+
+.app .bottom > div .bold {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+  .app .bottom {
+    height: 300px;
+  }
+
+  .app .bottom .MPH {
+    font-size: 0.9rem;
+    font-weight: bold;
+    }
+  
+  .app .bottom > div {
+    height: 100px;
+    font-size: 0.9em;
+    width: 100px;
+  }
+
+h1 {
+    font-size: 6rem;
+  }
+
+p {
+  font-size: 1rem;
+}
+
+.information_icon {
+  height: 40px;
+  width: 40px;
 }
